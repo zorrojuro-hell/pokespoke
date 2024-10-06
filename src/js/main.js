@@ -1,3 +1,7 @@
+import data from "./data.json";
+console.log(data);
+// target:to log all the data
+
 // to target the input element
 const inputEl = document.querySelector("input");
 // log the targetted element
