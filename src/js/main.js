@@ -1,9 +1,19 @@
 import data from "./data.json";
-console.log(data);
+
+const cardRow = document.querySelector("#cards-row");
+const inputEl = document.querySelector("input");
+
+// to create html paragraph
+
+console.log(cardRow);
 // target:to log all the data
 
-// to target the input element
-const inputEl = document.querySelector("input");
+for (let obj of data) {
+  const paragraph = document.createElement("p");
+  paragraph.textContent = obj.name;
+  cardRow.appendChild(paragraph);
+}
+
 // log the targetted element
 // inputEl.focus();
 
